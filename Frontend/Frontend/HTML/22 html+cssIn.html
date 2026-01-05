@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>html + css</title>
+     <style>
+          .main{
+               height: 500px;
+               width: 500px;
+               background-color: yellow;
+          }
+          #parent1{
+               height: 250px;
+               width: 500px;
+               background-color: blue;
+          }
+          #parent2{
+               height: 250px;
+               width: 500px;
+               background-color: red;
+          }
+
+          #child1{
+               height: 250px;
+               width: 250px;
+               background-color: springgreen;
+               float: left;
+          }
+          #child3{
+               height: 250px;
+               width: 250px;
+               background-color: darkorange;
+               float: left;
+          }
+     </style>
+</head>
+<body>
+     <div class="main">
+          <div id="parent1">
+               <div id="child1">Home</div>
+               <div>About</div>
+          </div>
+          <div id="parent2">
+               <div id="child3">Contact</div>
+               <div>Gallery</div>
+          </div>
+     </div>
+</body>
+</html>

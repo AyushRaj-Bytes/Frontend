@@ -1,0 +1,51 @@
+<!--Date:29Dec2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Introduction to CSS</title>
+    <style>
+     .main{
+          height: 500px;
+          width: 500px;
+          background-color: yellow;
+     }
+     #parent1{
+          height: 250px;
+          width: 500px;
+          background-color: violet;
+          
+     }
+     #parent2{
+          height: 250px;
+          width: 500px;
+          background-color: tomato;
+     }
+     #child1{
+          height: 250px;
+          width: 250px;
+          background-color: aqua;
+          float: left;
+     }
+     #child3{
+          height: 250px;
+          width: 250px;
+          background-color: chartreuse;
+          float: left;
+     }
+
+    </style>
+</head>
+<body>
+     <div class="main"><!--Main-->
+          <div id="parent1"><!--Parent1-->
+               <div id="child1">Home</div>
+               <div id="child2">About</div>
+          </div>
+          <div id="parent2"><!--Parent2-->
+               <div id="child3">Contact</div>
+               <div id="child4">Gallery</div>
+          </div>
+     </div>
+</body>
+</html>

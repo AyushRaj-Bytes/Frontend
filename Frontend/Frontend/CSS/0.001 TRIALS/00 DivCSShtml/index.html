@@ -1,0 +1,74 @@
+<!--Date:29Dec2025-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Trial 01 HTML + CSS</title>
+     <style>
+          .main{
+               height: 600px;
+               width: 600px;
+               background-color: antiquewhite;
+          }
+          #parent1{
+               border: 2px;
+               overflow: hidden;
+               height: 200px;
+               width: 600px;
+               background-color: blue;
+          }
+          #parent2{
+               height: 200px;
+               width: 600px;
+               background-color: red;
+
+          }
+          #parent3{
+               height: 200px;
+               width: 600px;
+               background-color: rgb(255, 255, 0);
+          }
+         #child1{
+          height: 200px;
+          width: 200px;
+          background-color: chartreuse;
+          float: left;
+     }
+
+        #child2{
+           height: 200px;
+           width: 200px;
+           background-color: darkorange;
+           float: left;
+          }
+
+       #child3{
+          height: 200px;
+          width: 200px;
+          background-color: blue;
+          float: left;
+     }
+
+          
+          #child4{
+               height: 200px;
+               width: 300px;
+               background-color: darkturquoise;
+               float: left;
+          }     </style>
+</head>
+<body>
+     <div class="main"><!--Main-->
+          <div id="parent1"><!--parent1-->
+               <div id="child1">A</div><!--child1-->
+               <div id="child2">B</div><!--child2-->
+               <div id="child3">C</div><!--child3-->
+          </div>
+          <div id="parent2">D</div><!--parent2-->
+          <div id="parent3"><!--Parent3-->
+               <div id="child4">E</div><!--child4-->
+               <div id="child5">F</div><!--child5-->
+          </div>
+     </div>
+</body>
+</html>

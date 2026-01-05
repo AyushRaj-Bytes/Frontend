@@ -1,0 +1,12 @@
+.main{
+     height: 500px;
+     width: 400px;
+     background-color: yellow;
+     font-size: 50px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.main:hover{
+     background-color: tomato;
+     color: white;
+}

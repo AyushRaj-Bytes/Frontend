@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title> Div + CSS </title>
+     <style>
+          .main{
+               height: 500px;
+               width: 500px;
+               background-color: black;
+          }
+          #Parent1{
+               height: 250px;
+               width: 500px;
+               background-color: rgb(255, 0, 0);
+          }
+          #Parent2{
+               height: 250px;
+               width: 500px;
+               background-color: blue;
+          }
+
+          .column1{
+               height: 250px;
+               width: 250px;
+               background-color: yellow;
+               float: left;
+
+          }
+          .column3{
+               height: 250px;
+               width: 250px;
+               background-color: turquoise;
+               float: left;
+          }
+
+          
+
+          
+     </style>
+</head>
+<body>
+     <div class="main">
+          <div id="Parent1"> <!--Parent1-->
+               <div class="column1">Home</div><!--Column1-->
+               <div class="column2">About</div><!--Column2-->
+
+          </div>
+          <div id="Parent2"><!--Column2-->
+               <div class="column3">Contact</div><!--Column3-->
+               <div class="column4">Gallery</div><!--Column4-->
+
+          </div>
+     </div>
+     <h1>Hello</h1>
+</body>
+</html>
+
+
+
+<!--
+               <div class="child2">B</div>
+               <div class="child4">D</div>
+-->

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>More on Div Tag In HTML</title>
+
+     <style>
+          body {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+               margin: 0;
+               font-family: Arial, sans-serif;
+          }
+
+          /* Parent container */
+          body > div {
+               width: 400px;
+               height: 400px;
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               grid-template-rows: 1fr 1fr;
+               border: 3px solid black;
+          }
+
+          /* Top row & bottom row */
+          body > div > div {
+               display: contents;
+          }
+
+          /* A (Home) */
+          body > div > div:first-child > div:first-child {
+               grid-column: 1 / 2;
+               grid-row: 1 / 2;
+               border: 2px solid black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-weight: bold;
+          }
+
+          /* B (About + Course) */
+          body > div > div:first-child > div:last-child {
+               grid-column: 2 / 3;
+               grid-row: 1 / 2;
+               display: grid;
+               grid-template-rows: 1fr 1fr;
+               border: 2px solid black;
+          }
+
+          body > div > div:first-child > div:last-child > div {
+               border: 1px solid black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-weight: bold;
+          }
+
+          /* C (IIP + WS) */
+          body > div > div:last-child > div:first-child {
+               grid-column: 1 / 2;
+               grid-row: 2 / 3;
+               display: grid;
+               grid-template-rows: 1fr 1fr;
+               border: 2px solid black;
+          }
+
+          body > div > div:last-child > div:first-child > div {
+               border: 1px solid black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-weight: bold;
+          }
+
+          /* D (Contact) */
+          body > div > div:last-child > div:last-child {
+               grid-column: 2 / 3;
+               grid-row: 2 / 3;
+               border: 2px solid black;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               font-weight: bold;
+          }
+     </style>
+</head>
+
+<body>
+     <div>
+          <div>
+               <div>Home</div>
+               <div>
+                    <div>About</div>
+                    <div>Course</div>
+               </div>
+          </div>
+          <div>
+               <div>
+                    <div>IIP</div>
+                    <div>WS</div>
+               </div>
+               <div>Contact</div>
+          </div>
+     </div>
+</body>
+</html>
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>More on Div Tag In HTML</title>
+</head>
+<body>
+     <div>
+          <div>
+               <div>Home</div>
+               <div>
+                    <div>About</div>
+                    <div>Course</div>
+               </div>
+          </div>
+          <div>
+               <div>
+                    <div>IIP</div>
+                    <div>WS</div>
+               </div>
+               <div>Contact</div>
+          </div>
+     </div>
+</body>
+</html>-->

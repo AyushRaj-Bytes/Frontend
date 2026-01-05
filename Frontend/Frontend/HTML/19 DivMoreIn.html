@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box Layout</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Parent box (0) */
+        .parent {
+            width: 400px;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            border: 2px solid black;
+        }
+
+        /* Section A */
+        .A {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Section B */
+        .B {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .B div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Section C */
+        .C {
+            border: 1px solid black;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .C div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        /* Section D */
+        .D {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <!-- A -->
+        <div class="A">A</div>
+
+        <!-- B -->
+        <div class="B">
+            <div>B1</div>
+            <div>B2</div>
+        </div>
+
+        <!-- C -->
+        <div class="C">
+            <div>C1</div>
+            <div>C2</div>
+        </div>
+
+        <!-- D -->
+        <div class="D">D</div>
+    </div>
+
+</body>
+</html>
