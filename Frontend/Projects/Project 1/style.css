@@ -1,0 +1,37 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.container{
+     background-color: #e5e5fd;
+     min-height: 100vh;
+     border: 10px solid #1d1e4c;
+}
+.content{
+     max-width: 990px;
+     margin: 0 auto;
+     
+}
+
+.top_sec, h1{
+     margin-top: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+}
+
+
+.txt{
+     font-size: 20px;
+     font-weight: bold;
+     color: #1d1e4c;
+     text-transform: uppercase;}
+
+
+.img_sec,img{
+     height: 320px;
+     width: 300px;
+     border-radius: 20%;
+}
