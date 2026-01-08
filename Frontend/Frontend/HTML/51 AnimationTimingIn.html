@@ -1,0 +1,64 @@
+<!-- Date:08Jan2026 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animation Timings In HTML</title>
+     <style>
+          .container{
+               width: 700px;
+               height: 150px;
+               margin: 300px auto;
+               border: 2px solid black;
+               position: relative;
+          }
+          .content{
+               width: 200px;
+               height: 100px;
+               margin-top: 22px;
+               background-color: greenyellow;
+               position: absolute;
+               animation: box 5s;
+               animation-iteration-count: infinite;
+               animation-direction: alternate;
+               animation-delay: 2s;
+               animation-timing-function: linear;
+               /* animation-timing-function: ease; */
+               /* animation-timing-function: ease-in; */
+               /* animation-timing-function: ease-out ; */
+               /* animation-timing-function: ease-in-out; */
+
+
+
+
+
+               /* 
+               Linear: Start, mid, and end are same
+               ease : Start fast, mid fast but, end slow
+               ease - in : Start slow, mid faster towards end, and end hits faster
+               ease - out : start fast, mid fast, and end slow
+               ease-in-out : Slow Start, mid fast,  and slow end
+               */
+
+          }
+          @keyframes box{
+              from{
+               left: 0px;
+              }
+              to{
+               left: 500px;
+              }
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <div class="content">
+
+          </div>
+     </div>
+
+</body>
+</html>
